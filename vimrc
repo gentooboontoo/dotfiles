@@ -12,8 +12,8 @@ let NERDTreeChDirMode=2
 "let mapleader=","
 map <F2> :NERDTreeToggle<CR>
 
-"Lignes de plus de 80 caractères
+"Lignes de plus de 72 caractères
 "en tant qu'erreur
 "http://blog.jeffscudder.com/2008/11/vim-line-length.html
 "match ErrorMsg '\%>80v.\+'
-match ErrorMsg /.\%>80v/
+match ErrorMsg /.\%>72v/
