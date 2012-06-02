@@ -1,6 +1,6 @@
 source ~/.vim/vimrc
-"set shiftwidth=2
-"set softtabstop=2
+set shiftwidth=2
+set softtabstop=2
 set tabstop=2
 colorscheme vibrantink
 "autocmd VimEnter * NERDTree
