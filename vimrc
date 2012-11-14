@@ -55,3 +55,7 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
+if $TERM == 'rxvt-unicode'
+  colorscheme solarized
+endif
