@@ -3,6 +3,9 @@ URxvt.font: xft:DejaVu Sans Mono:size=10
 URxvt.boldFont: xft:DejaVu Sans Mono:size=10
 !URxvt.font: xft:Inconsolata:size=11
 !URxvt.boldFont: xft:Inconsolata:size=11
+URxvt*secondaryWheel: true
+! Needed to have autocompletion initialized
+URxvt*loginShell: true
 
 !! drop in Solarized colorscheme for Xresources/Xdefaults
 
