@@ -18,7 +18,8 @@
  Bundle 'scrooloose/nerdcommenter'
  Bundle 'scrooloose/syntastic'
  Bundle 'tpope/vim-surround'
- Bundle 'ervandew/supertab'
+"Bundle 'ervandew/supertab'
+ Bundle 'Valloric/YouCompleteMe'
 
  Bundle 'ack.vim'
 
@@ -33,6 +34,9 @@
  set shiftwidth=2
  set softtabstop=2
  set tabstop=2
+
+ " https://github.com/karma-runner/karma/issues/199/
+ set backupcopy=yes
 
  map <F2> :NERDTreeToggle<CR>
  "Change current directory when changing root node
@@ -56,6 +60,6 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
-if $TERM == 'rxvt-unicode'
+if $TERM == 'rxvt-unicode-256color'
   colorscheme solarized
 endif
