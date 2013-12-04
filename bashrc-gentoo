@@ -43,5 +43,8 @@ fi
 PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# SSH Agent
+eval `${HOME}/bin/ssh-agent-launcher.sh`
+
 # Aliases
 alias cal="cal -m"
