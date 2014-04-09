@@ -62,6 +62,9 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
+" templates
+au BufNewFile *.html 0r ~/.vim/templates/html5
+
 if $TERM == 'rxvt-unicode-256color'
   colorscheme solarized
 endif
