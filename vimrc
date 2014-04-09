@@ -44,7 +44,9 @@
 
  " Limit length to 72 characters
  " http://blog.jeffscudder.com/2008/11/vim-line-length.html
- match ErrorMsg /.\%>72v/
+ "match ErrorMsg /.\%>72v/
+
+ set colorcolumn=72,80
 
 " Strip trailing whitespace
 function! <SID>StripTrailingWhitespaces()
