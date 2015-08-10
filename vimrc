@@ -42,6 +42,8 @@
  "Change current directory when changing root node
  let NERDTreeChDirMode=2
 
+ let g:syntastic_javascript_checkers = ['jshint', 'jscs']
+
  " Limit length to 72 characters
  " http://blog.jeffscudder.com/2008/11/vim-line-length.html
  "match ErrorMsg /.\%>72v/
@@ -65,6 +67,9 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 " templates
 au BufNewFile *.html 0r ~/.vim/templates/html5
 
-if $TERM == 'rxvt-unicode-256color'
+" Highlight current line in insert mode
+autocmd InsertEnter,InsertLeave * set cul!
+
+if $TERM =~ 'rxvt'
   colorscheme solarized
 endif
