@@ -6,6 +6,9 @@ URxvt.boldFont: xft:Inconsolata:size=11
 URxvt*secondaryWheel: true
 ! Needed to have autocompletion initialized
 URxvt*loginShell: true
+! Fix excessive font spacing (URxvt ou Xft issue)
+URxvt.letterSpace: -1
 
-#include ".Xresources-dark-solarized"
+! #include ".Xresources-dark-solarized"
 ! #include ".Xresources-light-solarized"
+#include "repositories/third-party/tomorrow-theme/Xdefaults/XresourceTomorrowNightBright"
