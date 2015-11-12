@@ -20,6 +20,8 @@
  Plugin 'tpope/vim-surround'
 "Plugin 'ervandew/supertab'
  Plugin 'Valloric/YouCompleteMe'
+"Plugin 'ryanoasis/vim-devicons'
+Plugin 'lsdr/monokai'
 
  Plugin 'ack.vim'
 
@@ -66,10 +68,11 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 " templates
 au BufNewFile *.html 0r ~/.vim/templates/html5
+au BufNewFile *.rb 0r ~/.vim/templates/ruby
 
 " Highlight current line in insert mode
 autocmd InsertEnter,InsertLeave * set cul!
 
 if $TERM =~ 'rxvt'
-  colorscheme solarized
+  colorscheme Tomorrow-Night-Bright
 endif
