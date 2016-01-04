@@ -53,3 +53,11 @@ eval `${HOME}/bin/ssh-agent-launcher.sh`
 # Aliases
 alias beep='paplay /usr/share/sounds/gnome/default/alerts/glass.ogg'
 alias cal="cal -m"
+
+# Transfer.sh
+# Pipe stdout to tee to display progress bar then returned link on standard
+# output with final link
+transfer() {
+  curl --progress-bar --upload-file $1 https://transfer.sh/$(basename $1) | tee;
+}
+alias share=transfer
