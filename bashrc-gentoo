@@ -51,4 +51,5 @@ eval "$(rbenv init -)"
 eval `${HOME}/bin/ssh-agent-launcher.sh`
 
 # Aliases
+alias beep='paplay /usr/share/sounds/gnome/default/alerts/glass.ogg'
 alias cal="cal -m"
