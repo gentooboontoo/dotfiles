@@ -25,8 +25,9 @@ function parse_git_branch {
 }
 
 function eyeballs {
-  if [ $? != 0 ]; then
-    printf "\033[01;31m( O_o) "
+  LAST_RETURN=$?
+  if [ ${LAST_RETURN} != 0 ]; then
+    printf "\033[01;31m( O_o) [${LAST_RETURN}] "
   fi
 }
 
