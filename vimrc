@@ -31,6 +31,9 @@ Plugin 'lsdr/monokai'
  Plugin 'tpope/vim-fireplace'
 
  call vundle#end()
+
+ syntax on
+
  filetype plugin indent on     " required!
 
  let mapleader = ","
