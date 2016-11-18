@@ -51,6 +51,10 @@ fi
 PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# Go
+export GOPATH="$HOME/go"
+PATH="$PATH:$GOPATH/bin"
+
 # SSH Agent
 eval `${HOME}/bin/ssh-agent-launcher.sh`
 
