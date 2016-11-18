@@ -60,7 +60,7 @@ eval `${HOME}/bin/ssh-agent-launcher.sh`
 
 # Aliases
 alias beep='paplay /usr/share/sounds/gnome/default/alerts/glass.ogg'
-alias cal="cal -m"
+alias cal="cal --year --week --monday"
 
 # Transfer.sh
 # Pipe stdout to tee to display progress bar then returned link on standard
