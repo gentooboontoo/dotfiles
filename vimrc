@@ -25,6 +25,11 @@ Plugin 'lsdr/monokai'
 
  Plugin 'ack.vim'
 
+ " Clojure plugins
+ Plugin 'vim-scripts/paredit.vim'
+ Plugin 'eapache/rainbow_parentheses.vim'
+ Plugin 'tpope/vim-fireplace'
+
  call vundle#end()
  filetype plugin indent on     " required!
 
@@ -73,6 +78,13 @@ au BufNewFile *.rb 0r ~/.vim/templates/ruby
 
 " Highlight current line in insert mode
 autocmd InsertEnter,InsertLeave * set cul!
+
+" Clojure
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+let g:paredit_electric_return = 0
 
 if $TERM =~ 'rxvt'
   colorscheme Tomorrow-Night-Bright
