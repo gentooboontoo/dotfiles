@@ -89,6 +89,9 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 let g:paredit_electric_return = 0
 
+" Execute current file shortcut
+nnoremap <leader>r :!%:p<Enter>
+
 if $TERM =~ 'rxvt'
   colorscheme Tomorrow-Night-Bright
 endif
