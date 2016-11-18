@@ -56,6 +56,11 @@ eval "$(rbenv init -)"
 export GOPATH="$HOME/go"
 PATH="$PATH:$GOPATH/bin"
 
+# GPG
+# Allow gpg-agent to use correct pinentry program especially when connected
+# through SSH
+export GPG_TTY=$(tty)
+
 # SSH Agent
 eval `${HOME}/bin/ssh-agent-launcher.sh`
 
