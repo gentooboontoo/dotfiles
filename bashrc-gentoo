@@ -43,9 +43,10 @@ GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWUPSTREAM=1
 PS1='$(eyeballs)\[\033[00;32m\]\u@\h \[\033[0;33m\][\d \t] \[\033[01;33m\]\w\[\033[00;34m\]$(__git_ps1)\[\033[01;34m\]\nλ\[\033[00m\] '
 
-if [ $TERM == "rxvt-unicode-256color" ]; then
+#if [[ $TERM =~ "256color" ]]; then
+  # Solarized dircolors
   eval $(dircolors -b ~/.dircolors.ansi-universal)
-fi
+#fi
 
 # Initialize rbenv
 PATH="$HOME/.rbenv/bin:$PATH"
