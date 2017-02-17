@@ -23,6 +23,7 @@ PATH="${HOME}/node_modules/.bin:${PATH}"
 # History
 export HISTTIMEFORMAT="%d/%m/%y %T "
 export HISTCONTROL="erasedups"
+HISTIGNORE='rm *'
 
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
