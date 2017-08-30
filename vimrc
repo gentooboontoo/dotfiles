@@ -30,6 +30,9 @@ Plugin 'lsdr/monokai'
  Plugin 'eapache/rainbow_parentheses.vim'
  Plugin 'tpope/vim-fireplace'
 
+ " Git
+ Plugin 'airblade/vim-gitgutter'
+
  call vundle#end()
 
  syntax on
