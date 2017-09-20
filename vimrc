@@ -64,6 +64,10 @@ Plugin 'lsdr/monokai'
 
  set colorcolumn=72,80
 
+ " Folding
+ set foldmethod=indent
+ set foldlevelstart=99
+
 " Strip trailing whitespace
 function! <SID>StripTrailingWhitespaces()
 " Preparation: save last search, and cursor position.
